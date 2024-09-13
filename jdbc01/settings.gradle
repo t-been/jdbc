@@ -1,0 +1,3 @@
+rootProject.name = 'jdbc01'
+include 'jdbc02'
+
