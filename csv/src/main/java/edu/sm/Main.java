@@ -1,17 +1,35 @@
 package edu.sm;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        String csvFile = "d:/aa.csv";  // 입력 파일 경로
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        // StringBuilder를 사용하여 출력 데이터를 저장
+        StringBuilder output = new StringBuilder();
+
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(csvFile), Charset.forName("MS949")))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] values = line.split(",");
+
+                // 각 값을 StringBuilder에 저장
+                for (String value : values) {
+                    output.append(value).append(" ");  // 값을 추가하고 공백을 넣음
+                }
+                output.append("\n");  // 각 줄이 끝나면 줄바꿈 추가
+            }
+
+            // StringBuilder에 저장된 내용을 출력 (런타임 출력)
+            System.out.println(output.toString());
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
