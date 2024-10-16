@@ -25,4 +25,5 @@ public class Sql {
     public static String selectOneCart = "SELECT * FROM Cart WHERE id = ?";
     public static String selectCart = "SELECT * FROM Cart";
     public static String selectByUserCart = "SELECT * FROM Cart WHERE cId = ?";
+    public static String insertCsvData;
 }

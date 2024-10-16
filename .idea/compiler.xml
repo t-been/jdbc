@@ -7,11 +7,17 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.24/13a394eed5c4f9efb2a6d956e2086f1d81e857d9/lombok-1.18.24.jar" />
         </processorPath>
-        <module name="workshop0913.test" />
-        <module name="workshop0913.main" />
+        <module name="csvjdbc.main" />
+        <module name="csvjdbc.test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="csv" target="17" />
+      <module name="csv.main" target="17" />
+      <module name="csv.test" target="17" />
+      <module name="csvjdbc" target="17" />
+      <module name="csvjdbc.main" target="17" />
+      <module name="csvjdbc.test" target="17" />
       <module name="jdbc01" target="17" />
       <module name="jdbc01.jdbc02.main" target="17" />
       <module name="jdbc01.jdbc02.test" target="17" />
