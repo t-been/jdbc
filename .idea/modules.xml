@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/csv.iml" filepath="$PROJECT_DIR$/csv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/csvjdbc.iml" filepath="$PROJECT_DIR$/csvjdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdbc.iml" filepath="$PROJECT_DIR$/jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdbc01.iml" filepath="$PROJECT_DIR$/jdbc01.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jdbc02/jdbc01.jdbc02.iml" filepath="$PROJECT_DIR$/.idea/modules/jdbc02/jdbc01.jdbc02.iml" />

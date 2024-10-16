@@ -8,7 +8,7 @@ public class CartInsert {
 
         CartService cartService = new CartService();
         Cart cart = Cart.builder()
-                .cId(1)   // Customer ID
+                .cId(2)   // Customer ID
                 .pId(1)   // Product ID
                 .count(1) // 수량
                 .build();

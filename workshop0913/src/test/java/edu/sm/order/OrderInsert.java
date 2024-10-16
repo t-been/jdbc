@@ -11,7 +11,7 @@ public class OrderInsert {
 
         // 필드명에 맞게 빌더 패턴 수정
         Order order = Order.builder()
-                .cart_Id(5)  // cart_Id -> cartId
+                .cart_Id(6)  // cart_Id -> cartId
                 .order_Date(LocalDateTime.parse("2021-09-13T00:00:00"))  // order_Date -> orderDate
                 .build();
 

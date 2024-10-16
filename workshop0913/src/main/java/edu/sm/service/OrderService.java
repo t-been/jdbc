@@ -60,7 +60,7 @@ public class OrderService implements MService<Integer, Order> {
         try {
             dao.delete(integer, con);
             con.commit();
-            result = true;
+            result = false;
         } catch (Exception e) {
             con.rollback();
             throw e;
